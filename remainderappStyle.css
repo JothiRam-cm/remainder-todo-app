@@ -1,0 +1,225 @@
+/* remainderappStyle.css */
+
+:root {
+    /* Define your color theme variables here */
+    /* Primary: Tropical Tree */
+    --primary-100: #F2FEFF;
+    --primary-200: #BDFAFE;
+    --primary-300: #85F6F6;
+    --primary-400: #4BE0D7;
+    --primary-500: #18B5A3;
+    --primary-600: #089179;
+    --primary-700: #026E54;
+    --primary-800: #004A34;
+    --primary-900: #002619;
+
+    /* Neutral */
+    --neutral-100: #FAFCFC;
+    --neutral-200: #E7EDEE;
+    --neutral-300: #D5DFDF;
+    --neutral-400: #C3D0D0;
+    --neutral-500: #B2C2C0;
+    --neutral-600: #8E9B99;
+    --neutral-700: #6A7472;
+    --neutral-800: #464D4B;
+    --neutral-900: #222625; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-100);
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--neutral-300);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-100);
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--primary-500);
+    color: white;
+    padding: 1px;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+}
+.card {
+    background-color: var(--neutral-200);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--neutral-400);
+    border-radius: 8px;
+}
+.listcard {
+    background-color: var(--neutral-200);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--neutral-400);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-600);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-700);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-600);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--neutral-100);
+    padding: 10px;
+    border-top: 1px solid var(--neutral-300);
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+ .help-content {
+    /* max-width: 300px; */
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+} 
+
+.help-content h2 {
+    color: var(--primary-500);
+    margin-top: 20px;
+}
+
+.help-content h3 {
+    color: var(--primary-600);
+    margin-top: 15px;
+}
+
+.help-content p {
+    color: var(--neutral-700);
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-100);
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+/* Style the navigation links as buttons */
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--primary-500);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change the color on hover for better user feedback */
+a:hover {
+    background-color: var(--primary-700);
+}
+
+.menu-button {
+    display: none; /* Hide the button by default */
+    cursor: pointer;
+    background-color: var(--primary-500);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Style the navigation links in the mobile menu 
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-100);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+ Show the mobile menu when the button is clicked 
+.show-menu .mobile-menu {
+    display: flex;
+}*/
+/*
+@media only screen and (max-width: 768px) {
+     Display the menu button on smaller screens
+    .menu-button {
+        display: block;
+    }
+
+     Hide the navigation links on smaller screens
+    nav a {
+        display: none;
+    }
+
+     Show the navigation links in the mobile menu when the button is clicked
+    .show-menu a {
+        display: block;
+    }
+} */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Reminder App</title>
+    <link rel="stylesheet" href="remainderappStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-100);
+            color: var(--neutral-800);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: var(--primary-500);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--primary-200);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: var(--neutral-800);
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid var(--primary-400);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button,
+        .contact-us-button,
+        .contact-us-button-footer {
+            background-color: var(--primary-500);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover,
+        .contact-us-button:hover,
+        .contact-us-button-footer:hover {
+            background-color: var(--primary-700);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-100);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <p style="margin-left:45%;"><a href="/index.html" target="_top" style="justify-content: center;text-align: center;width: 100px; height: 7px; border: radius 1px; background-color:var(--primary-500);">Home</a></p>
+
+    <script>
+        function navigateToContactForm() {
+            // You can add logic to scroll to the contact form or navigate to a separate contact page
+            // For now, let's scroll to the form assuming it has an ID "contact-form"
+            document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function submitForm() {
+            // You can add logic here to handle the form submission
+            // For example, you can access form fields using document.getElementById and retrieve user input
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            // Perform actions with the captured input, such as sending it to a server or displaying it
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Subject:', subject);
+            console.log('Message:', message);
+
+            // You can also reset the form after submission if needed
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+</body>
+</html>

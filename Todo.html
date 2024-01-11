@@ -1,0 +1,33 @@
+<!-- remainderTodo.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="remainderappStyle.css">
+    <title>Todo List - Reminder & Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <!-- Todo Card -->
+        <div class="card">
+            <label for="todoInput">Add Todo:</label>
+            <input type="text" id="todoInput" placeholder="Enter your todo task">
+            <button onclick="addTodo()">Add</button>
+            <!-- <ul id="todoList"></ul> -->
+        </div>
+        <div class="listcard">
+            <h2 style="margin-left: 40%;">Todo List</h2>
+            <ul id="todoList"></ul>
+        </div>
+
+        <!-- Link to navigate to the Reminders page -->
+        <a href="/remainder.html">Go to Reminders</a>
+        <p style="margin-left:45%;"><a href="/index.html" target="_top" style="justify-content: center;text-align: center;width: 100px; height: 7px; border: radius 1px; background-color:var(--primary-500);">Home</a></p>
+    </div>
+    <script src="remainderappJs.js"></script>
+</body>
+</html>

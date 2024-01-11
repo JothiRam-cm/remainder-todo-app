@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder and Todo App</title>
+    <link rel="stylesheet" href="/remainderappStyle.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+
+        /* Ensure iframes take up remaining space */
+        div {
+            flex: 1;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Include Header using iframe -->
+    <iframe src="head.html" style="height: 20%;"></iframe>
+
+    <!-- Main Content Area using iframes -->
+    <div>
+
+        <!-- Todo Page iframe -->
+        <iframe src="/Todo.html"></iframe>
+
+        <!-- Reminder Page iframe -->
+        <iframe src="/remainder.html"></iframe>
+
+    </div>
+
+    <!-- Include Footer using iframe -->
+    <iframe src="/footer.html" style="height: 20%;"></iframe>
+</body>
+</html>
